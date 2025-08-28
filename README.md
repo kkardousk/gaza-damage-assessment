@@ -13,7 +13,7 @@ pinned: false
 Interactive Shiny application for analyzing building damage data in Gaza Strip using UNOSAT satellite imagery data.
 
 ## Features
-- Interactive map visualization with Leaflet
+- Interactive map visualization with mapgl/Leaflet
 - Damage statistics by governorate and time period
 - Temporal analysis across sensor dates
 - Data export capabilities (Excel and GeoJSON)
