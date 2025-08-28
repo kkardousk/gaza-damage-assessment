@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: gaza-building-assessment
+    env: r
+    plan: free
+    buildCommand: "R -e \"install.packages(c('shiny', 'dplyr', 'ggplot2', 'leaflet', 'scales', 'qs', 'tidyr', 'stringr', 'gt', 'gtExtras', 'purrr', 'openxlsx', 'sf', 'bslib', 'mapboxapi'), repos='http://cran.rstudio.com/', dependencies=TRUE)\""
+    startCommand: "R -e \"shiny::runApp(host='0.0.0.0', port=as.numeric(Sys.getenv('PORT')))\""
+    envVars:
+      - key: MAPBOX_SECRET_TOKEN
+        value: 'sk.eyJ1Ijoia2thcmRvdXMiLCJhIjoiY21lMmp3ZGNtMG9kNjJpc2E4eTdvdTM2cSJ9.16hxVKEbqQT7VCDW3VWlsQ'
