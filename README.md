@@ -1,11 +1,7 @@
 ---
-title: Gaza Damage Assessment
-emoji: 🏗️
-colorFrom: red
-colorTo: blue
-sdk: docker
-app_port: 7860
-pinned: false
+Title: Gaza Damage Assessment 🏗️
+SDK: docker
+App Port: 7860
 ---
 
 # Gaza Damage Assessment
